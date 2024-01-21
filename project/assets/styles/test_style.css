@@ -1,0 +1,22 @@
+html {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.container{
+    width: 100px;
+    margin: 0 auto;
+
+}
+
+.lp{
+    align-items: center;
+}
+
+.lp p {
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.button{
+    background-color:blue;
+}

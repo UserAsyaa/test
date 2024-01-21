@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="./assets/styles/style.css">
+	<link rel="stylesheet" href="./assets/styles/fonts.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container"> <!--Этот класс мы создаём для контейнера (рамка с оптимальными отступами от границ экрана).
+		Делается для красоты, чтобы элементы сайта не были слишком прижаты к краю. Потому что по новым стандартам так
+		выглядит эстетичнее, ну и сами отступы могут потом быть полезны, например, для каких-то маленьких панелей
+		инструментов-->
+		<header> <!--Красивая интерпретация элемента div для шапок (панель сверху) сайтов. Смысла от него особо нет,
+		просто его интерпретация как отдельного элемента избавляет нас от создания лишнего класса для div.
+		Ну и в плане читаемости кода лучше. А так можете не использовать.-->
+			<div class="navigation_icon"> <!--Иконка нав. панели для мобильной версии вместо целой нав. панели-->
+				<img src="assets/images/nav_icon.svg" alt="Изображение не прогрузилось!">
+			</div>
+			<div class="logo"> <!--Блок логотипа. Внутри изобрание и текст логотипа-->
+				<img src="assets/images/logo.svg" alt="Изображение не прогрузилось!">
+				<p>E GURU</p>
+			</div>
+			<div class="links"><!--Блок навигационной панели-->
+				<nav> <!--Также красивая интерпретация div, но для списка ссылок (навигационная сетка).
+				Используется в основном как раз в шапках с кучей перенаправляющих кнопок, но можно использовать также
+				для якорных ссылок, или просто где-нибудь внутри сайта, шапкой он не ограничивается. Также особо не имеет смысла,
+				просто лучше читается.-->
+					<a href="#">Home</a>
+					<a href="#" >About Us</a>
+					<a href="#" >Features</a>
+					<a href="#" >How it works</a>
+				</nav>
+			</div>
+			<div class="sign_up"><!--Блок для кнопки регистрации-->
+				<a href="#">Sign Up</a>
+			</div>
+			<div class="profile_avatar"> <!--Иконка аватарки вместо кнопки регистрации вместо кнопки регистрации-->
+				<img src="assets/images/avatar.svg" alt="Изображение не прогрузилось!">
+			</div>
+		</header>
+		<div class="main_block"><!--Главный блок страницы-->
+			<div class="text_block"> <!--Текстовый подблок-->
+				<h1>STUDY FROM<br>HOME WITH EXPERT</h1>
+				<p>a learning system based on formalised<br>teaching with the help of resources.</p>
+
+				<div class="button_block comp"> <!--Подблок для кнопок-->
+					<a href="#">Get Started</a>
+					<a href="#">Learn More</a>
+				</div>
+			</div>
+			<div class="man_image"> <!--Подблок для изображения-->
+				<img src="assets/images/man.svg" alt="test">
+			</div>
+			<div class="button_block mobile"> <!--Объясняю, поскольку у нас блок кнопок расположен как бы внутри другого
+			блока, мы не можем поменять егоместами с изображением, потому что мы не на одном уровне с ним. Для этого мы
+			создаём ещё один блок кнопок, который будет на одном уровне с изображением. Чтобы не запутаться в них, мы
+			создаём два отдельны класса mobile и comp. Их смысл состоит лишь в том, что блок с классом comp
+			будет отображаться только в комп. версии, а блок mobile - только в мобильной. При этом каждый блок кнопок имеет
+			одинаковый класс button_block, то есть структура этих кнопок записана в одинаковый класс, а их отображение в разные.
+			Несколько классов для элементов задавать можно, это очень удобно в тех моментах, когда например нужно
+			одинаковые элементы по структуре совсем немного поменять, для этого к уже существующему классу добавляем новый.-->
+				<a href="#">Get Started</a>
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+	<div class="bg"> <!--Класс заднего фона-->
+		<div class="container"> <!--Сам задний фон у нас будет по всей длине окна, а всё остальное внутри него уже в контейнере-->
+			<div class="footer"> <!--Класс футера-->
+				<div class="footer_info"> <!--Класс текстового блока слева-->
+					<h1>WHY WE ARE<br>THE BEST</h1>
+					<p>a learning system based on<br>formalised teaching with help of....</p>
+				</div>
+				<div class="footer_icon"> <!--Класс иконочных подблоков (состоит из трёх штук)-->
+					<div class="icon_block"> <!--Класс самого подблока (состоит из иконки, заголовка и текста)-->
+						<img src="assets/images/woman.svg" alt="test">
+						<h1>EXPERT TEACHER</h1>
+						<p>a learning system based<br>on formalised teaching</p>
+					</div>
+					<div class="icon_block"> <!--Класс самого подблока (состоит из иконки, заголовка и текста)-->
+						<img src="assets/images/lamp.svg" alt="test">
+						<h1>ONLINE COURSES</h1>
+						<p>a learning system based<br>on formalised teaching</p>
+					</div>
+					<div class="icon_block"> <!--Класс самого подблока (состоит из иконки, заголовка и текста)-->
+						<img src="assets/images/timer.svg" alt="test">
+						<h1>24/7 SUPPORT</h1>
+						<p>a learning system based<br>on formalised teaching</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

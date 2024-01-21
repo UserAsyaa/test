@@ -1,0 +1,11 @@
+.container
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header
+{
+    background-image: url("../images/bg.jpg");
+    
+}
